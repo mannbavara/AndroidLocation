@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical"
+    tools:context="com.example.myapplication3.MainActivity">
+
+    <!--<Button-->
+    <!--android:id="@+id/btn_start_location_updates"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="40dp"-->
+    <!--android:text="@string/start_updates" />-->
+    <!--<Button-->
+    <!--android:id="@+id/btn_stop_location_updates"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:enabled="false"-->
+    <!--android:text="@string/stop_updates" />-->
+    <!-- add RadioGroup which contain the many RadioButton-->
+    <RadioGroup
+        android:layout_marginTop="30dp" android:id="@+id/groupradio" android:layout_width="match_parent" android:layout_height="wrap_content">
+        <!-- In RadioGroup create the 1 Radio Button-->
+        <!-- like this we will add some more Radio Button-->
+        <RadioButton
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/radio_in" android:text="IN RANGE" android:checked = "true" android:onClick="onRadioButtonClicked" />
+        <RadioButton
+            android:layout_width="match_parent" android:layout_height="wrap_content" android:id="@+id/radio_out" android:text="OUT RANGE" android:onClick="onRadioButtonClicked"/>
+    </RadioGroup>
+    <!--<Button-->
+    <!--android:id="@+id/btn_app"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="10dp"-->
+    <!--android:text="APP CAMERA" />-->
+    <Button android:id="@+id/btn_sys" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="CAMERA" />
+    <TextView
+        android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="50dp" android:gravity="center_horizontal" android:text="Location updates will be received only when app is foreground" />
+    <TextView
+        android:id="@+id/location_result" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:textColor="#333" android:textSize="18dp" />
+    <TextView
+        android:id="@+id/updated_on" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30dp" android:textSize="11dp" />
+</LinearLayout>
